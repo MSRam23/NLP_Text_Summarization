@@ -1,0 +1,6 @@
+As per the survey, stemming in used as a pre-processing step in most of the existing research, although the generated stem may not be a valid word of the language. In the proposed approach, lemmatization is used which properly reduces words to their root form generating meaningful lemmas by takingthe context of the words into account unlike stemming. It was
+also identified from the survey that in most cases, the Natural Language Toolkit (NLTK) alone was used for conducting pre-processing tasks, although it isn’t capable of performing
+lemmatization and Part-of-Speech (POS) tagging accurately. In the proposed model, Stanford CoreNLP [11] is used alongside NLTK as it yields better performance at the two above mentioned tasks. Duplicate removal was hardly addressed and
+is a stage that is added in the proposed approach to mitigate
+overfitting.A combination of various features, that have been considered in separate experiments in existing research and have proven to be effective in identifying the significance of a sentence in a document, is used in this paper. The performance
+of Support Vector Machine (SVM), K-Nearest Neighbour (KNN) and Decision Tree algorithms is compared and the generated summary is also converted to an audio clip which eliminates the need to devote specific reading time
